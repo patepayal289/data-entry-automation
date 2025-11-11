@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+/* Background */
+.app-bg {
+  background: linear-gradient(135deg, #f0f7ff, #e6f0ff);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header Card */
+.header-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 6px solid #007bff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Card Styles */
+.card {
+  border-radius: 16px !important;
+  transition: all 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.15);
+}
+
+/* Buttons */
+button {
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Table */
+.table {
+  background: white !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Automation Panel */
+.automation-card {
+  background: linear-gradient(145deg, #ffffff, #f3f7ff);
+  border: none;
+  border-left: 5px solid #0d6efd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-muted small {
+  color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.automation-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-left: 5px solid #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.automation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(13, 110, 253, 0.15);
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+
+.bg-light {
+  background: #f8f9fa !important;
+}
+
+button.btn-outline-primary {
+  border-radius: 12px;
+  font-weight: 500;
 }
