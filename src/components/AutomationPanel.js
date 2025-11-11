@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Card, Button, ProgressBar, Form } from "react-bootstrap";
-// import { FaCogs, FaSyncAlt, FaSun, FaMoon } from "react-icons/faa";
+import { FaCogs, FaSyncAlt } from "react-icons/fa";
+
 
 function AutomationPanel({ entries }) {
   const [autoSave, setAutoSave] = useState(true);
